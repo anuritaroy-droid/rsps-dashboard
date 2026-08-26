@@ -33,7 +33,7 @@ tbody td.left{text-align:left;font-weight:500}
 <body>
 <div class="topbar">
   <h1>WSOC Operation Myntra D0 Execution <span class="badge">EAST</span></h1>
-  <span>2026-08-26 &nbsp;|&nbsp; Refresh: 12:00 &nbsp;|&nbsp; 2026-08-26 12:32:12</span>
+  <span>2026-08-26 &nbsp;|&nbsp; Refresh: 13:00 &nbsp;|&nbsp; 2026-08-26 13:18:17</span>
 </div>
 <div class="kpi-strip">
   <div class="kcard"><div class="val">31,388</div><div class="lbl">OFD Total</div></div>
@@ -124,8 +124,9 @@ tbody td.left{text-align:left;font-weight:500}
       <option value="">All Hubs</option><option value="AMBIKAPURMYNTRAHUB_ABP">AMBIKAPURMYNTRAHUB_ABP</option><option value="ASANSOLMYNTRAHUB_ASN">ASANSOLMYNTRAHUB_ASN</option><option value="BANKURAMYNTRAHUB_BKA">BANKURAMYNTRAHUB_BKA</option><option value="BARANAGARMYNTRAHUB_KOL">BARANAGARMYNTRAHUB_KOL</option><option value="BEHRAMPURMYNTRAHUB_BER">BEHRAMPURMYNTRAHUB_BER</option><option value="BHILLAIMYNTRAHUB_BIA">BHILLAIMYNTRAHUB_BIA</option><option value="BILASPURMYNTRAHUB_BSP">BILASPURMYNTRAHUB_BSP</option><option value="BURDWANMYNTRAHUB_BDM">BURDWANMYNTRAHUB_BDM</option><option value="CHANDANNAGARMYNTRAHUB_CNN">CHANDANNAGARMYNTRAHUB_CNN</option><option value="CITYCENTREMYNTRAHUB_DRG">CITYCENTREMYNTRAHUB_DRG</option><option value="COOCHBEHARMYNTRAHUB_COB">COOCHBEHARMYNTRAHUB_COB</option><option value="CUTTACKMYNTRAHUB_CTK">CUTTACKMYNTRAHUB_CTK</option><option value="DANKUNIMYNTRAHUB_DKN">DANKUNIMYNTRAHUB_DKN</option><option value="DURGAPURMYNTRAHUB_DGP">DURGAPURMYNTRAHUB_DGP</option><option value="GANGTOKMYNTRAHUB_GTK">GANGTOKMYNTRAHUB_GTK</option><option value="HALISHAHAARMYNTRAHUB_BRT_KAL">HALISHAHAARMYNTRAHUB_BRT_KAL</option><option value="HOWRAHMYNTRAHUB_BRT_MDN">HOWRAHMYNTRAHUB_BRT_MDN</option><option value="JALPAIGURIMYNTRAHUB_JPG">JALPAIGURIMYNTRAHUB_JPG</option><option value="KHARAGPURMYNTRAHUB_KGP">KHARAGPURMYNTRAHUB_KGP</option><option value="MALDAMYNTRAHUB_MLD">MALDAMYNTRAHUB_MLD</option><option value="MIDNAPOREMYNTRAHUB_MDP">MIDNAPOREMYNTRAHUB_MDP</option><option value="MURSHIDABADMYNTRAHUB_MBB">MURSHIDABADMYNTRAHUB_MBB</option><option value="NEWTOWNMYNTRAHUB_KOL">NEWTOWNMYNTRAHUB_KOL</option><option value="RAILWAYBOUNDARYROADMYNTRAHUB_BRT_NAI">RAILWAYBOUNDARYROADMYNTRAHUB_BRT_NAI</option><option value="ROURKELAMYNTRAHUB_RRK">ROURKELAMYNTRAHUB_RRK</option><option value="SARONAMYNTRAHUB_RAI">SARONAMYNTRAHUB_RAI</option><option value="SATYANAGARMYNTRAHUB_BBN">SATYANAGARMYNTRAHUB_BBN</option><option value="SERAMPOREMYNTRAHUB_BRT_SER">SERAMPOREMYNTRAHUB_BRT_SER</option><option value="SILIGURIMYNTRAHUB_IXB">SILIGURIMYNTRAHUB_IXB</option><option value="SILVERCITYMYNTRAHUB_CTC">SILVERCITYMYNTRAHUB_CTC</option><option value="TOLLYGANGEMYNTRAHUB_KOL">TOLLYGANGEMYNTRAHUB_KOL</option>
     </select>
     <button onclick="clearUNAFilter()" style="padding:6px 14px;border-radius:6px;border:none;background:#e65100;color:#fff;font-size:12px;cursor:pointer;font-weight:600">&#x2715; Clear</button>
+    <button onclick="downloadUNA()" style="padding:6px 14px;border-radius:6px;border:none;background:#1b5e20;color:#fff;font-size:12px;cursor:pointer;font-weight:600">&#x2B07; Download CSV</button>
   </div>
-  <div class="tbl-wrap"><table class="undel">
+  <div class="tbl-wrap"><table class="undel" id="unaTable">
     <thead><tr><th>ShipmentId</th><th>Final Hub Mapping</th><th>GM</th><th>RM</th><th>AM</th><th>Type</th><th>ShipmentStatus</th><th>CustomerPromiseDate</th><th>UNA Category</th></tr></thead><tbody id="unaBody"><tr data-hub="HOWRAHMYNTRAHUB_BRT_MDN"><td>MYSC1335031466</td><td>HOWRAHMYNTRAHUB_BRT_MDN</td><td>Ashish Ranjan</td><td>Subir Poddar</td><td>Soumen Biswas</td><td>ML</td><td>Undelivered_Not_Attended</td><td>2026-08-26 06:00:00</td><td style="color:#1b5e20;font-weight:700">Actionable</td></tr>
 <tr data-hub="HOWRAHMYNTRAHUB_BRT_MDN"><td>MYSC1335414552</td><td>HOWRAHMYNTRAHUB_BRT_MDN</td><td>Ashish Ranjan</td><td>Subir Poddar</td><td>Soumen Biswas</td><td>ML</td><td>Undelivered_Not_Attended</td><td>2026-08-27 06:00:00</td><td style="color:#1b5e20;font-weight:700">Actionable</td></tr>
 <tr data-hub="HOWRAHMYNTRAHUB_BRT_MDN"><td>MYSC1335536904</td><td>HOWRAHMYNTRAHUB_BRT_MDN</td><td>Ashish Ranjan</td><td>Subir Poddar</td><td>Soumen Biswas</td><td>ML</td><td>Undelivered_Not_Attended</td><td>2026-08-27 06:00:00</td><td style="color:#1b5e20;font-weight:700">Actionable</td></tr>
@@ -15246,7 +15247,7 @@ tbody td.left{text-align:left;font-weight:500}
 </tbody>
   </table></div></div>
 </div>
-<div class="footer">WSOC Operation Myntra D0 Execution — RSPS Pipeline v2.0 — 2026-08-26 12:32:12</div>
+<div class="footer">WSOC Operation Myntra D0 Execution — RSPS Pipeline v2.0 — 2026-08-26 13:18:17</div>
 <script>
 Chart.defaults.font.family="'Segoe UI',sans-serif";Chart.defaults.font.size=11;
 new Chart(document.getElementById('cRM'),{type:'bar',data:{labels:["Subir Poddar", "Sebasis Rayguru", "Mohit Kumar", "Debmalya Ghosh", "Subhankar Banerjee", "Sujeet Shaw"],datasets:[
@@ -15296,6 +15297,27 @@ function filterUNA(){
 function clearUNAFilter(){
   document.getElementById('unaHubFilter').value = '';
   filterUNA();
+}
+function downloadUNA(){
+  var table = document.getElementById('unaTable');
+  var rows = [];
+  table.querySelectorAll('tr').forEach(function(row){
+    if (row.style.display === 'none') return;
+    var cells = row.querySelectorAll('th,td');
+    var line = Array.from(cells).map(function(c){
+      return '"' + c.innerText.replace(/"/g,'""') + '"';
+    }).join(',');
+    rows.push(line);
+  });
+  var blob = new Blob([rows.join('\n')], {type:'text/csv;charset=utf-8;'});
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url;
+  a.download = 'UNA_Tracker_2026-08-26.csv';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
 }
 
 </script>
